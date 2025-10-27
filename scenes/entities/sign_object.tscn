@@ -10,8 +10,8 @@ size = Vector2(14, 8)
 atlas = ExtResource("1_4iumc")
 region = Rect2(0, 0, 16, 16)
 
-[node name="SignObject" type="StaticBody2D"]
-scale = Vector2(4, 4)
+[node name="SignObject" type="StaticBody2D" groups=["interactiveObjects"]]
+input_pickable = true
 script = ExtResource("1_o2j60")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -7,5 +7,5 @@ atlas = ExtResource("1_ommen")
 region = Rect2(16, 0, 16, 16)
 
 [node name="GrassObject" type="Sprite2D"]
-scale = Vector2(4, 4)
+position = Vector2(8, 8)
 texture = SubResource("AtlasTexture_mamvk")
