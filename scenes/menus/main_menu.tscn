@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://yosp16q8ehd7"]
+
+[ext_resource type="Script" uid="uid://bvch7rs1c0ndb" path="res://scenes/menus/quit_button.gd" id="1_cpkd4"]
+[ext_resource type="Script" uid="uid://dunpl6yfsbckf" path="res://scenes/menus/new_game_button.gd" id="1_rb2ri"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 48
+text = "Fantasy Fallout"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewGameButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 226.0
+offset_right = 395.0
+offset_bottom = 285.0
+text = "New Game"
+script = ExtResource("1_rb2ri")
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 434.0
+offset_right = 395.0
+offset_bottom = 493.0
+text = "Quit"
+script = ExtResource("1_cpkd4")

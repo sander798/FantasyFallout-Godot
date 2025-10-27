@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://kgfrkqcylgy0"]
+
+[ext_resource type="Script" uid="uid://04bpfuat13d" path="res://scenes/play/camera.gd" id="1_yr24a"]
+[ext_resource type="PackedScene" uid="uid://cdckdfn3eslgx" path="res://scenes/entities/player.tscn" id="2_g7w14"]
+[ext_resource type="Script" uid="uid://3l6v0pmn2fpg" path="res://scenes/play/map_anchor.gd" id="2_xuijm"]
+
+[node name="PlayMain" type="Node2D"]
+
+[node name="Camera" type="Camera2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_yr24a")
+
+[node name="MapAnchor" type="Node2D" parent="."]
+script = ExtResource("2_xuijm")
+
+[node name="Player" parent="." instance=ExtResource("2_g7w14")]
+unique_name_in_owner = true

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://diy5lj60jkfsm"]
+
+[ext_resource type="Texture2D" uid="uid://c3jcdbslimiwo" path="res://graphics/entities/fallout_objects.png" id="1_ommen"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mamvk"]
+atlas = ExtResource("1_ommen")
+region = Rect2(16, 0, 16, 16)
+
+[node name="GrassObject" type="Sprite2D"]
+scale = Vector2(4, 4)
+texture = SubResource("AtlasTexture_mamvk")
