@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhpuasjp00hwv"]
+
+[ext_resource type="Script" uid="uid://bsfmhuqncrs25" path="res://scenes/menus/dialogue_panel.gd" id="1_auxc0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67c6q"]
+bg_color = Color(0.1175778, 0.21302527, 0.22252977, 1)
+
+[node name="DialoguePanel" type="Panel"]
+z_index = 2
+custom_minimum_size = Vector2(1152, 480)
+offset_right = 1152.0
+offset_bottom = 480.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_67c6q")
+script = ExtResource("1_auxc0")
+
+[node name="Speaker" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 1136.0
+offset_bottom = 48.0
+theme_override_font_sizes/normal_font_size = 32
+text = "	NPC Name"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Dialogue" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 1136.0
+offset_bottom = 464.0
+theme_override_font_sizes/normal_font_size = 24
+text = "	Lorem ipsum blah blah blah blah blahkasdjlansjldnalsdnal aslkdnalk asalkdnskldnalksndaslkdnd alknsd alksn asldna alsdnaa  lnwldkn a  landkad  nkldwwdn aiwdakwdid idn idw asdilandwi dna indl ni aklnsd asdasdasd asdasdasdasd asdasdasd asdasd
+weasdawdaw
+dawd
+dawdawd
+dawdss awd
+ada wda
+dadwa
+awd
+adw
+awd
+awd
+ad
+dwa"
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false

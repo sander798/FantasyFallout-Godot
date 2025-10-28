@@ -3,6 +3,8 @@ extends CharacterBody2D
 var walkSpeed: float = 200
 var interactionRange: float = 150
 
+signal playerInteracted
+
 func _process(delta: float) -> void:
 	if !Global.isTimeStopped and !%Camera.isCameraFree:
 		# Player movement
@@ -23,6 +25,8 @@ func _process(delta: float) -> void:
 			$AnimatedSprite2D.stop()
 			
 		if Input.is_action_just_pressed("player_interact"):
+			playerInteracted.emit()
+			
 			if Global.currentTarget != null:
 				# Check if target is in range
 				if Global.currentTarget.global_position.distance_to(self.global_position) < interactionRange:
